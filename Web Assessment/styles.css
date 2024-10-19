@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Ga+Maamli');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: mintcream;
+    min-height: 100vh;  /* Ensure the body takes full viewport height */
+    display: flex;
+    flex-direction: column;  /* Use Flexbox layout */
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+header {
+     font-family: 'Baskervville SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkblue;
+    color: gold;
+    padding: 0px 0;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+
+.logo {
+    float: left;
+    height: 150px;
+    width: 150px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+ nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: flex-start; /* Aligns the text and image to the top */
+    justify-content: space-between; /* Ensures there's space between the text and the image */
+    background-color: mintcream;
+}
+
+.text {
+     font-family: 'Baskervville SC', serif;
+    font-size: 24px;
+    color: black; 
+    line-height: 1.5; 
+    text-align: justify; 
+    padding: 10px; 
+    background-color: lavenderblush; 
+    border-radius: 10px; 
+    border-left: 5px solid red;
+    font-weight: 600;
+}
+
+.image {
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    1% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: midnightblue;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-family: 'Baskervville SC', serif; 
+    font-size: 50px;
+    font-weight: bold;
+    background-color: cornsilk;
+    
+}
+
+h3 {
+    text-align: center;
+    color: midnightblue;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Ga+Maamli', serif;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+form {
+    background-color: cornsilk;
+    padding: 25px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px black;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 30px;
+    background-color: mintcream;
+    
+}
+
+.registration-image {
+    flex: 1;
+    text-align: center;
+}
+.registration-image img {
+    max-width: 100%;
+    height: auto;
+    
+animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.registration-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    border-color: white;
+    background-color: mintcream;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: midnightblue;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.registration-form input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid midnightblue;
+    border-radius:   3px;
+    background-color: navajowhite;
+}
+
+.login-form h4 {
+    font-size: 20px;
+    color: midnightblue;
+    text-align: center;
+    margin-bottom: 1px;
+    font-family: 'Ga+Maamli', serif;
+    font-size: 50px;
+}
+
+.login-form h5{
+    font-size: 20px;
+    color: midnightblue;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 2px;
+    font-family: 'Ga+Maamli', serif;
+    font-size: 40px;
+}
+
+.login-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: oldlace;
+    padding: 20px;
+    border: 1px solid midnightblue;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: midnightblue;
+    font-family: 'Ga+Maamli', serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+.login-form input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid midnightblue;
+    border-radius: 3px;
+    background-color: navajowhite;
+}
+
+.addcar{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid midnightblue;
+    border-radius:   3px;
+    background-color: mintcream;
+}
+
+
+.addcar input{
+    background-color: oldlace;
+    max-width: 95%;
+    border-color: midnightblue;
+    border-radius: 3px;
+    background-color: navajowhite;
+}
+
+.addcar label{
+    display: block;
+    margin-bottom: 1px;
+    color: midnightblue;
+    font-family: 'Ga+Maamli', serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    
+}
+
+
+.search-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid midnightblue;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: beige;
+}
+
+
+.search-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: midnightblue;
+    font-family: 'Ga+Maamli', serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.search-form input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid midnightblue;
+    border-radius: 3px;
+    background-color: navajowhite;
+    
+}
+
+
+
+#searchResults {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;  /* Dark gray */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+.about-us-image {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.about-us-img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.company-info p {
+    margin: 15px 0;
+    background-color: antiquewhite;
+    padding: 15px;
+    border-left: 5px solid #00796b;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #004d40;
+    box-shadow: 0 2px 4px midnightblue;
+}
+
+.company-info p a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.company-info p a:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+/* Services Section Styles */
+.services ul {
+    list-style: none;
+    padding: 0.5px;
+}
+
+.services ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.services ul li::before {
+    content: "\";
+    color: orangered;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    transform: rotate(90deg); 
+}
+
+/* Interactive Catalogue Styles */
+.interactive-catalogue .catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.catalogue-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.catalogue-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.catalogue-item p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+
+ .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #ff5733;
+    position: relative;
+    font-style: italic;
+}
+
+.testimonials .testimonial::before {
+    content: open-quote;
+    font-size: 2em;
+    color: #ff5733;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.testimonials .testimonial p {
+    margin: 0;
+    padding-left: 40px;
+}
+
+/* Staff Section Styles */
+.our-staff {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.staff-member {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+}
+
+.staff-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.staff-member p {
+    margin: 0;
+    font-weight: bold;
+}
+footer {
+    background-color: #333;  
+    color: #fff;  
+    text-align: center;  
+    padding: 20px 0; 
+    width: 100%;
+    font-size: 15px;  
+    position:static;  /* Allow the footer to sit at the bottom of the content */
+    margin-top: 20px;  /* Add some spacing from the content */
+    flex-shrink: 0;  /* Prevent footer from shrinking */
+}
+
+footer p {
+    margin: 0;  
+}

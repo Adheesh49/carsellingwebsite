@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Seller Login</title>
+    <script src="scripts.js" defer></script> <!-- Ensure the script is loaded properly -->
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Company Logo" class="logo">
+        <h1>Seller Login</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seller_registration.html">Seller Registration</a></li>
+                <li><a href="login.html">Seller Login</a></li>
+                <li><a href="search.html">Search Cars</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-form">
+            <h4>Welcome Back!</h4>
+            <h5>Sign in to your account.</h5>
+
+            <!-- Login Form -->
+            <form id="loginForm" method="POST" action="login.php">
+                <label for="username">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Display error message if available -->
+            <?php if (isset($_GET['error'])): ?>
+                <div id="loginError" style="color: red;">
+                    <?php echo htmlspecialchars($_GET['error']); ?>
+                </div>
+            <?php endif; ?>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Car Sale. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

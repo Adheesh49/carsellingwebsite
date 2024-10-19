@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Search Cars</title>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Company Logo" class="logo">
+        <h1>Search Cars</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seller_registration.html">Seller Registration</a></li>
+                <li><a href="login.html">Seller Login</a></li>
+                <li><a href="search.html">Search Cars</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="searchForm" class="search-form" action="search.php" method="POST">
+            <h3>ENTER CAR DETAILS</h3>
+            <label for="searchModel">Car Model:</label>
+            <input type="text" id="searchModel" name="model" placeholder="Enter car model">
+            
+            <label for="searchLocation">Location:</label>
+            <input type="text" id="searchLocation" name="location" placeholder="Enter location" >
+            
+            <button type="submit">Search</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Car Sale. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js" defer></script> <!-- Ensure this line is included -->
+</body>
+</html>
